@@ -13,5 +13,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('index', [UserController::class, 'index'])->name('index_user');
-Route::post('user', [UserController::class, 'pepole'])->name('user');
+Route::get('/index', [UserController::class, 'index'])->name('index_user');
+Route::post('/user', [UserController::class, 'pepole'])->name('user');
+

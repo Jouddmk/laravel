@@ -14,8 +14,8 @@ class UserController extends Controller
     }
         public function pepole(Request $request){ 
             // dd('hello new people');
-            // dd ( $request)
-            return view('users.index');
+            dd ( $request);
+            // return view('users.index');
             
             // $users=User::create([
             //     'name'=>$request->name,
